@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SHAPES </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shapes">
+    <div class="rsquare" id="rsquare"></div>
+    <div class="rcircle" id="rcircle"></div>
+    <div class="rrectangle" id="rrectangle"></div>
+
+    <div class="bsquare" id="bsquare"></div>
+    <div class="bcircle" id="bcircle"></div>
+    <div class="brectangle" id="brectangle"></div>
+
+    <div class="bksquare" id="bksquare"></div>
+    <div class="bkcircle" id="bkcircle"></div>
+    <div class="bkrectangle" id="bkrectangle"></div>
+  </div>
+  
+  <h4 id="count"> </h4>
+  <div class="buttons"> 
+    <button class="click" id="click" onclick="increment()"> CLICK </button>
+    <button class="reset" id="reset" onclick="decrement()"> RESET </button>
+    <button class="red" id="red" onclick="red()"> RED </button>
+    <button class="blue" id="blue" onclick="blue()"> BLUE </button>
+  </div>
+ 
+  
+</body>
+
+<script>
+  var i=0
+  function increment(){
+    var i=i+1
+    var c=document.getElementById("count")
+    c.innerHTML = "Count = " + i
+    if (i%5==0) {
+      var res=document.getElementById("bkcircle")
+      return res
+    } else if (!(i%5==0) && i%2==0) {
+      var res=document.getElementById("bksquare")
+      return res
+    } 
+      else {
+        var res=document.getElementById("bkrectangle")
+      return res
+      }
+    }
+  function decrement(){
+    var i=i-1
+    var c=document.getElementById("count")
+    c.innerHTML = "Count = " + i
+    if (i%5==0) {
+      var res=document.getElementById("bkcircle")
+      return res
+    } else if (!(i%5==0) && i%2==0) {
+      var res=document.getElementById("bksquare")
+      return res
+    } 
+      else {
+        var res=document.getElementById("bkrectangle")
+      return res
+      }
+  }
+  function red(){
+    if (i%5==0) {
+      var res=document.getElementById("rcircle")
+      return res
+    } else if (!(i%5==0) && i%2==0) {
+      var res=document.getElementById("rsquare")
+      return res
+    } 
+      else {
+        var res=document.getElementById("rrectangle")
+      return res
+      }
+  }
+  function blue(){
+    if (i%5==0) {
+      var res=document.getElementById("bcircle")
+      return res
+    } else if (!(i%5==0) && i%2==0) {
+      var res=document.getElementById("bsquare")
+      return res
+    } 
+      else {
+        var res=document.getElementById("brectangle")
+      return res
+      }
+  }
+  
+</script>
+</html>

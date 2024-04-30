@@ -1,0 +1,60 @@
+@keyframes identifier {
+  
+}
+
+#bsquare{
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+}
+
+#bksquare{
+  height: 50px;
+  width: 50px;
+  background-color: black;
+}
+
+#rsquare{
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+#bcircle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+#bkcircle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#rcircle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+#brectangle{
+  height: 30px;
+  width: 50px;
+  background-color: blue;
+}
+
+#rrectangle{
+  height: 30px;
+  width: 50px;
+  background-color: red;
+}
+
+#bkrectangle{
+  height: 30px;
+  width: 50px;
+  background-color: black;
+}
